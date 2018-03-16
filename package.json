@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Convert a local crontab to a set of UTC crontabs",
   "main": "index.js",
+  "bin": {
+    "local-crontab": "local-crontab"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,6 +26,7 @@
   },
   "homepage": "https://github.com/unitedincome/local-crontab#readme",
   "dependencies": {
+    "argparse": "^1.0.10",
     "cron-converter": "0.0.12",
     "deep-equal": "^1.0.1",
     "timezone-js": "^0.4.13",

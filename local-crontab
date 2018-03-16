@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+const {ArgumentParser} = require('argparse');
+const {localCrontabToUtcCrontabs} = require('./index.js');
+const {version} = require('./package.json');
+
+const parser = new ArgumentParser({
+  version,
+  addHelp: true,
+  description: 'Convert local crontabs to UTC crontabs',
+});
+parser.addArgument('CRONTAB', {help: 'A crontab in local time'});
+parser.addArgument('--tz', {help: 'The timezone to use. Defaults to system timezone'});
+var args = parser.parseArgs();
+
+for (const crontab of localCrontabToUtcCrontabs(args.CRONTAB, args.tz))
+    console.log(crontab)
