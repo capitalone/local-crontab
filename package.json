@@ -21,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/unitedincome/local-crontab/issues"
   },
-  "homepage": "https://github.com/unitedincome/local-crontab#readme"
+  "homepage": "https://github.com/unitedincome/local-crontab#readme",
+  "dependencies": {
+    "cron-converter": "0.0.12",
+    "deep-equal": "^1.0.1",
+    "timezone-js": "^0.4.13",
+    "tzdata": "^1.0.9"
+  }
 }
