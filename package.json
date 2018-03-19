@@ -1,6 +1,6 @@
 {
   "name": "local-crontab",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Convert a local crontab to a set of UTC crontabs",
   "main": "index.js",
   "bin": {

@@ -21,9 +21,15 @@ const localCrontabToUtcCrontabs = (localCrontab, timezone) => {
         new Date().getFullYear(), month-1, day, 12, 0, timezone);
       const offsetHours = Math.floor(localDate.getTimezoneOffset() / 60);
       const offsetMinutes = localDate.getTimezoneOffset() % 60;
+      let newMinute = minute - offsetMinutes;
+      let newHour = hour - offsetHours;
+      if (newHour < 0)
+        newHour += 24;
+      if (newMinute < 0)
+        newMinute += 60;
       utcArrayCrontabs.push([
-        localArrayCrontab[0].map((minute) => minute - offsetMinutes),
-        localArrayCrontab[1].map((hour) => hour - offsetHours),
+        localArrayCrontab[0].map((minute) => newMinute),
+        localArrayCrontab[1].map((hour) => newHour),
         [day],
         [month],
         localArrayCrontab[4]
