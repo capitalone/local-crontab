@@ -4,7 +4,8 @@ A NodeJS library and utility to convert a crontab in a local timezone into a set
 creates multiple UTC crontabs because of Daylight Saving Time.
 
 ## Use it online!
-Go to https://unitedincome.github.io/local-crontab
+Check it out at [unitedincome.github.io/local-crontab](https://unitedincome.github.io/local-crontab)
+[![](./.screenshot.png)](https://unitedincome.github.io/local-crontab)
 
 ## Use as a script
 ```
