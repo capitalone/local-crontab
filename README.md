@@ -38,6 +38,7 @@ $ npx local-crontab  '0 10 * * *' --tz America/Denver
 ```
 
 ## Use as a library
+Install with `npm i local-crontab`, then:
 ```javascript
 > const {localCrontabToUtcCrontabs} = require('local-crontab');
 > localCrontabToUtcCrontabs('0 10 * * *', 'America/New_York')     
