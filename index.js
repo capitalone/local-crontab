@@ -73,7 +73,9 @@ const localCrontabToUtcCrontabs = (localCrontab, timezone) => {
     return acc;
   }, []);
   // combine start & end of year if possible
-  if (equal(utcArrayCrontabs[0][0], utcArrayCrontabs[utcArrayCrontabs.length-1][0])
+  if (utcArrayCrontabs.length > 1 // not the same crontab
+      &&
+      equal(utcArrayCrontabs[0][0], utcArrayCrontabs[utcArrayCrontabs.length-1][0])
       &&
       equal(utcArrayCrontabs[0][1], utcArrayCrontabs[utcArrayCrontabs.length-1][1]))
     utcArrayCrontabs[0][3].push(...utcArrayCrontabs.pop()[3]);
