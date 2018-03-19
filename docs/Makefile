@@ -1,8 +1,5 @@
-all: index.html index.js selectr.min.css
-index.html: src/index.html
-	mkdir -p dist
-	cp $^ $@
-index.js: src/index.js node_modules
+all: bundle.js selectr.min.css
+bundle.js: index.js node_modules
 	mkdir -p dist
 	browserify $< -o $@
 selectr.min.css: node_modules/mobius1-selectr/dist/selectr.min.css
