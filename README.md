@@ -5,7 +5,7 @@ creates multiple UTC crontabs because of Daylight Saving Time.
 
 ## Use it online!
 Check it out at [unitedincome.github.io/local-crontab](https://unitedincome.github.io/local-crontab)
-[![](./.screenshot.png)](https://unitedincome.github.io/local-crontab)
+[![](./docs/.screenshot.png)](https://unitedincome.github.io/local-crontab)
 
 ## Use as a script
 ```
