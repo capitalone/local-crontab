@@ -1027,15 +1027,15 @@ const localCrontabToUtcCrontabs = (localCrontab, timezone) => {
       const offsetMinutes = localDate.getTimezoneOffset() % 60;
       utcArrayCrontabs.push([
         localArrayCrontab[0].map((minute) => {
-          let newMinute = minute - offsetMinutes;
-          if (newMinute < 0)
-            newMinute += 60;
+          let newMinute = minute + offsetMinutes;
+          if (newMinute > 60)
+            newMinute -= 60;
           return newMinute;
         }),
         localArrayCrontab[1].map((hour) => {
-          let newHour = hour - offsetHours;
-          if (newHour < 0)
-            newHour += 24;
+          let newHour = hour + offsetHours;
+          if (newHour > 24)
+            newHour -= 24;
           return newHour;
         }),
         [day],

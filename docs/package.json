@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "local-crontab": "*",
+    "local-crontab": "file:..",
     "mobius1-selectr": "^2.4.1"
   },
   "devDependencies": {
