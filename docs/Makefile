@@ -7,5 +7,5 @@ node_modules: package.json
 	npm i
 
 clean:
-	rm -rf dist
+	rm -rf bundle.js node_modules
 .PHONY: clean
