@@ -42,10 +42,10 @@ Install with `npm i local-crontab`, then:
 ```javascript
 > const {localCrontabToUtcCrontabs} = require('local-crontab');
 > localCrontabToUtcCrontabs('0 10 * * *', 'America/New_York')     
-[ '0 5 * 1-2,12 *',                                               
-  '0 5 1-10 3 *',                                                 
-  '0 6 11-31 3 *',                                                
-  '0 6 * 4-10 *',                                                 
-  '0 6 1-3 11 *',                                                 
-  '0 5 4-31 11 *' ]                                               
+[ '0 15 * 1-2,12 *',                                               
+  '0 15 1-10 3 *',                                                 
+  '0 14 11-31 3 *',                                                
+  '0 14 * 4-10 *',                                                 
+  '0 14 1-3 11 *',                                                 
+  '0 15 4-31 11 *' ]                                               
 ```
