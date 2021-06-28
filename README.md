@@ -1,4 +1,4 @@
-# United Income created this project with the intention of it helping us with timezone handling. We no longer use this project and it has not gained wide adoption. As such, we have stopped providing updates to this project and archived it as of June 26th, 2021.
+# United Income at Capital One created this project with the intention of it helping us with timezone handling. We no longer use this project and it has not gained wide adoption. As such, we have stopped providing updates to this project and archived it as of June 28th, 2021.
 
 # local-crontab
 
